@@ -2,4 +2,4 @@
 
 const hello = (message: string) => {};
 
-console.log("Wow");
+console.log("Wow!!!");
