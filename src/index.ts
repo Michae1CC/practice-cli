@@ -1,5 +1,19 @@
 #!/usr/bin/env node
 
-const hello = (message: string) => {};
+import { Command } from "commander";
 
-console.log("Wow!!!");
+// Declare the program
+
+const program = new Command();
+
+// Add actions
+
+program
+  .action(() => {
+    console.log("Hello!");
+  })
+  .description("Say hello");
+
+// Execute!
+
+program.parse(process.argv);
